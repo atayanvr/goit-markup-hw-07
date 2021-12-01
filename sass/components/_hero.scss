@@ -11,7 +11,7 @@
     margin-right: auto;
 }
 
-.hero-container{
+.hero__container{
     width: 640px;
     text-align: center;
     margin-left: auto;
@@ -19,7 +19,7 @@
 
 }
 
-.hero-title{
+.hero__title{
     
     color: $primary-white-color;
 font-size: 44px;
@@ -32,7 +32,7 @@ margin-bottom: 30px;
 
 }
 
-.hero-button{
+.hero__button{
     color: $primary-white-color;
     background-color: $accent-color;
     font-family: 'Roboto', sans-serif;
@@ -82,7 +82,7 @@ cursor: pointer;
     translate: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-close{
+.modal__close{
     display: flex;
     margin-top: 8px;
     margin-right: 8px;
@@ -98,37 +98,34 @@ cursor: pointer;
     
 }
 
-.modal-svg{
-    fill: $primary-white-color;
+.modal__svg{
+    fill: $primary-text-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
-.button-close:hover .modal-svg{
+.modal__close:hover .modal__svg{
     fill: $accent-color;
-    
 }
     
 
 
-.form-field{
+.form-call__field{
     position: relative;
 }
 
 .form-call{
     display: inline-flex;
     flex-direction: column;
-  
 }
 
-.form-call-label{
+.form-call__label{
     margin-left: 40px;
     font-size: 12px;
     line-height: 1.17;
     margin-bottom: 4px;
 }
 
-.form-call-input{
+.form-call__input{
     border-radius: 4px;
     display: block;
     width: 448px;
@@ -138,29 +135,27 @@ cursor: pointer;
     padding-left: 42px;
     margin-bottom: 10px;
     resize: vertical;
-    
 }
 
-.form-call-input.comment{
+.form-call__input.comment{
     padding-left: 16px;
     margin-bottom: 20px;
     height: 120px;
     resize: none;
 }
 
-.form-call-input:focus + .form-svg{
+.form-call__input:focus + .form-call__svg{
     fill: var(--accent-color);
 }
 
-.form-svg{
-    
+.form-call__svg{
     position: absolute;
     top: 41px;
     left: 50px;
 }
 
 
-.checkbox-icon{
+.subcribe-label__icon{
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -169,25 +164,36 @@ cursor: pointer;
     margin-right: 8px;
 }
 
-.sub-checkbox{
+.subcribe-label__checkbox{
     appearance: none;
-    
 }
 
-.sub-checkbox:checked + .checkbox-icon{
+.subcribe-label__checkbox:checked + .subcribe-label__icon{
     background-color: $accent-color;
     background-image: url(../images/send.svg); 
     background-size: contain;
     border-color: transparent;
     background-repeat: no-repeat;
-    
-   
 } 
 
-.call-btn{
+.subcribe-label__button{
     margin-left: auto;
     margin-right: auto;
-    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    color: $primary-white-color;
 }
 
 .subcribe-label{
@@ -201,12 +207,11 @@ cursor: pointer;
 
 
 
-.modal-title{
+.modal__title{
     margin: 0;
     font-size: 20px;
     line-height: 1.17;
     font-weight: 700;
     text-align: center;
     color: $primary-text-color;
-    
 }

@@ -6,7 +6,7 @@
     padding-bottom: 60px;
 }
 
-.footer-wrap{
+.footer__wrap{
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -14,15 +14,15 @@
 }
 
 
-.logo.footer > span{
+.footer__logo > span{
     color: $primary-white-color;
 }
 
-.logo.footer{
+.footer__logo{
     padding: 0;
 }
 
-.adress{
+.footer__adress{
     color: $primary-white-color;
     font-size: 14px;
     line-height: 1.71;
@@ -32,7 +32,7 @@
     margin-bottom: 9px;
 }
 
-.footer-link{
+.footer__link{
     color: #FFFFFF99;
 font-size: 14px;
 line-height: 1.71px;
