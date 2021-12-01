@@ -52,7 +52,7 @@ margin-bottom: 9px;
 
 /* Footer socials */
 
-.footer-socials-title{
+.footer-socials__title{
     color: $primary-white-color;
     text-transform: uppercase;;
 font-size: 14px;
@@ -68,12 +68,12 @@ margin-left: 70px;
    
 }
 
-.social-footer{
+.footer-socials__list{
     display: flex;
     justify-content: space-around;
 }
 
-.social-footer-link{
+.social-footer__link{
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
@@ -91,11 +91,11 @@ margin-left: 70px;
     }
 }
 
-.social-footer-item:last-child{
+.social-footer__item:last-child{
     margin-right: 53px;
 }
 
-.icon-footer{
+.social-footer__icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ margin-left: 70px;
 }
 
 
-.footer-subscribe-wrap .email{
+.footer-subscribe__wrap .email{
     color: $background-button;
 }
 
@@ -125,7 +125,7 @@ margin-left: 70px;
     padding-left: 16px;
 }
 
-.footer-subscribe-btn{
+.footer-subscribe__btn{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +145,7 @@ margin-left: 70px;
 
 }
 
-.icon-subscribe{
+.footer-subscribe__icon{
     margin-left: 10px;
     
 }
