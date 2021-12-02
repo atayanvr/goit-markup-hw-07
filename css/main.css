@@ -58,6 +58,12 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .site-nav .link {
   display: block;
   font-weight: 500;
@@ -74,12 +80,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-nav__item:last-child {
   margin-right: 0;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196F3;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -146,15 +146,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 30px;
 }
 
-.contact__icon {
-  fill: #757575;
-  margin-right: 10px;
-}
-
 .contact__link:hover .contact__icon,
 .contact__link:focus .contact__icon {
   fill: #2196F3;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__icon {
+  fill: #757575;
+  margin-right: 10px;
 }
 
 .hero {
@@ -202,7 +202,6 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-/* --------------- Modal  ------------------*/
 .backdrop {
   position: fixed;
   width: 100%;
@@ -247,13 +246,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.modal__close:hover .modal__svg {
+  fill: #2196F3;
+}
+
 .modal__svg {
   fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close:hover .modal__svg {
-  fill: #2196F3;
 }
 
 .form-call__field {
@@ -284,15 +283,15 @@ h1, h2, h3, h4, h5, h6 {
   resize: vertical;
 }
 
+.form-call__input:focus + .form-call__svg {
+  fill: var(--accent-color);
+}
+
 .form-call__input.comment {
   padding-left: 16px;
   margin-bottom: 20px;
   height: 120px;
   resize: none;
-}
-
-.form-call__input:focus + .form-call__svg {
-  fill: var(--accent-color);
 }
 
 .form-call__svg {
@@ -359,7 +358,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #212121;
 }
 
-/* Section Work */
 .list-work__icon {
   display: flex;
   min-height: 120px;
@@ -404,6 +402,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+/* Section Do */
 .section-do,
 .section-team {
   margin-left: auto;
@@ -557,7 +556,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Clients */
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -601,7 +599,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Footer */
 .footer {
   background-color: #2F303A;
   padding-top: 60px;
